@@ -1,22 +1,25 @@
-import time
-from gas_detection import GasDetection
-
-detection = GasDetection()
+from mq import *
+import sys, time
 
 BAC= 10000#1BAC(g/dL) is 10000ppm
 PPM=1/BAC
 
+mq = MQ()
 def getAlcoholValue():
-    global detection,PPM
-    ppm = detection.percentage()
+    global mq,BAC,PPM
+    try:
+    
+        perc = mq.MQPercentage()
+        print("ALCOHOL: %g ppm" % (perc["ALCOHOL"]))
+        BACValue=(perc["ALCOHOL"])*PPM
+        print('ALCOHOL BAC=',BACValue)
+        return BACValue
 
-    print('ALCOHOL: {} ppm'.format(ppm[detection.ALCOHOL_GAS]))
-    BACValue=PPM*ppm[detection.ALCOHOL_GAS]
+    except:
+        print("\nAbort by user")
 
-    print('ALCOHOL BAC=',BACValue)
+while True:
 
-    return BACValue
-
-while 1:
-    time.sleep(1)
     getAlcoholValue()
+
+    time.sleep(1)

@@ -96,7 +96,7 @@ A step by step series that covers how to get the Firmware running.
 ![GPIOsRPi](Circuit/rpi34.jpg)
 
 ### Circuit
-
+<!-- 
 ```http
 Pins connections
 ```
@@ -120,7 +120,7 @@ Pins connections
 | `SCL` | `GPIO2` | 
 | `SDA` | `GPIO3` | 
 | `VCC` | `3.3V` | 
-| `GND` | `GND` | 
+| `GND` | `GND` |  -->
 
 
 ![GPIOsRPiCkt](Circuit/Circuit.png)
@@ -130,7 +130,7 @@ Pins connections
 
 1.  Any Raspberry Pi (https://www.amazon.com/CanaKit-Raspberry-Micro-Supply-Listed/dp/B01C6FFNY4/ref=sr_1_1?dchild=1&keywords=raspberry+pi+3&qid=1632029848&sr=8-1)
 2.  MQ3 Sensor(https://www.amazon.com/ACROBOTIC-Alcohol-Breakout-Raspberry-Breathalyzer/dp/B07CSNGS87/ref=sr_1_5?dchild=1&keywords=mq3&qid=1632029867&sr=8-5)
-3.  ADS1115(https://www.amazon.com/ADS1115-16-Bit-ADC-Programmable-Amplifier/dp/B00QIW4MGW/ref=sr_1_3?dchild=1&keywords=ads1115&qid=1632029889&sr=8-3)
+3.  MCP3008
 4.  Logic Level Converter(https://www.amazon.com/SparkFun-Logic-Level-Converter-Bi-Directional/dp/B01N30ZCW9/ref=sr_1_6?crid=2NOGIA43AG9OS&dchild=1&keywords=logic+level+converter&qid=1632029917&sprefix=logic+level%2Caps%2C463&sr=8-6)
 
 
