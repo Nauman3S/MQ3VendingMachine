@@ -30,6 +30,7 @@ def getAlcoholValue():
 
     except Exception as e:
         print('\nAborted!')
+        return [0,0]
 
 
 while True:
