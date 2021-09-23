@@ -5,8 +5,9 @@ from gas_detection import GasDetection
 BAC = 10000  # 1BAC(g/dL) is 10000ppm
 PPM = 1/BAC
 
-detection = GasDetection()
 print('Please wait for 10 seconds while the Sensor Calibrates itself.')
+detection = GasDetection()
+
 time.sleep(10)
 loopCount = 0
 valsArray = []
